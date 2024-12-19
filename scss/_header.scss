@@ -1,52 +1,62 @@
 /*================= Top header area css ===============*/
 .header_top{
-    background: #192341;
-    color: #8c93a8;
+    background: #1e40af; /* Adjusted background to a blue shade */
+    color: #1e3a8a; /* Adjusted text color to a darker blue */
     height: 40px;
+    
     .menu{
         display: flex;
         align-items: center;
         height: 40px;
+        
         li{
             margin-right: 50px;
+            
             &:last-child{
                 margin-right: 0;
             }
+            
             a{
-                color: #8c93a8;
+                color: #1e40af; /* Adjusted link color to match the header background */
                 font-size: 14px;
+                
                 &:hover{
-                    color: #10b3d6;
+                    color: #2563eb; /* Adjusted hover color to a lighter blue */
                 }
             }
         }
     }
+    
     .right-menu{
         justify-content: flex-end;
+        
         li{
             position: relative;
             margin-right: 0;
             padding-right: 15px;
+            
             &::after{
                 position: absolute;
                 content: '';
-                background: #5a6279;
+                background: #1e3a8a; /* Adjusted vertical line color to match text */
                 height: 13px;
                 width: 1px;
                 margin: 0 15px;
                 top: 5px;
             }
+            
             &:last-child{
                 padding-right: 0;
                 padding-left: 15px;
+                
                 &::after{
                     display: none;
                 }
-
             }
         }
     }
 }
+
 
 /*================= header area css ===============*/
 .navbar{
@@ -58,18 +68,25 @@
     top: 0;
     z-index: 20;
     position: absolute;
+    background-color: #1e40af; /* Blue background for navbar */
 }
+
 .menu_one{
     background: transparent;
     transition: all 0.2s linear;
 }
+
 .sticky_logo{
+    display: flex;
+    justify-content: center; /* Center the logo */
+    align-items: center; /* Vertically center if needed */
     img{
         & + img{
             display: none;
         }
     }
 }
+
 .menu{
     > .nav-item{
         padding-bottom: 37px;
@@ -78,7 +95,7 @@
         > .nav-link{
             font-size: 14px;
             font-weight: 500;
-            color: #fff;
+            color: #b50d31;
             padding: 0;
             &:after{
                 display: none;
@@ -91,9 +108,9 @@
                 left: -38px;
                 min-width: max-content;
                 border: 1px solid rgb(230, 238, 239);
-                background: #fff;
+                background: #3309cd;
                 padding: 20px 0;
-                box-shadow: 0 30px 40px 0 rgba(4, 73, 89, 0.1);
+                box-shadow: 0 30px 40px 0 rgba(55, 7, 185, 0.1);
                 &:before{
                     content: "";
                     width: 12px;
@@ -211,7 +228,7 @@
                 .dropdown-menu{
                     min-width: 540px;
                     padding: 0;
-                    background: #4464a1;
+                    background: #024eda;
                     border: 0;
                     max-height: 309px;
                     min-height: 309px;
@@ -287,7 +304,7 @@
                                             content: "";
                                             width: 0;
                                             height: 1px;
-                                            background: #fff;
+                                            background: #3502ad;
                                             position: absolute;
                                             left: 0;
                                             bottom: 0;
@@ -321,7 +338,7 @@
                 &:before{
                     transform: scaleX(1);
                     opacity: 1;
-                    background: #209ff0;
+                    background: #2608e8;
                 }
             }
         }
@@ -334,7 +351,7 @@
                 &:before{
                     transform: scaleX(1);
                     opacity: 1;
-                    background: #209ff0;
+                    background: #0711dc;
                 }
             }
             @media(min-width: 992px){
@@ -553,7 +570,7 @@
         right: 15px;
         border: 0;
         padding: 0;
-        color: #1d2746;
+        color: #0840e8;
         background: transparent;
         font-size: 14px;
         z-index: 3;
