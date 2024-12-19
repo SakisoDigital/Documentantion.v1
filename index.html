@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link
@@ -47,7 +47,9 @@
       <nav class="navbar navbar-expand-lg menu_one menu_logo_change">
         <div class="container-fluid pl-60 pr-60">
           <a class="" href="index.html">
-            <img src="img/favicon.png" alt="logo" style="width: 150px" />
+            <img src="img/favicon.png" alt="logo" style="width: 50px; height: 50px; display: block; margin-left: auto; margin-right: auto;" />
+
+
           </a>
           <button
             class="navbar-toggler collapsed"
@@ -328,15 +330,18 @@
                         <strong>Database Connection</strong>
                         -
                         <ol class="ordered-list">
-                          <li>Open you command prompt</li>
+                          <li>Open you terminal</li>
                           <li>
-                            <code>yarn install</code> #or
-                            <code>npm install</code>
+                            <code>npm install mongoose
+                            </code>
                           </li>
                           <li>
-                            <code>yarn run dev</code> #or
-                            <code>npm run dev</code> (will start the dev server)
+                            <code> Establish a connection to a MongoDB database by configuring a connection URI and using Mongoose's built-in methods for database interaction</code>
+                            
                           </li>
+                          <ol class="ordered-list">
+                            <li> Once connected, you can perform CRUD operations (Create, Read, Update, Delete) through models created from these schemas.</li>
+                            </li>
                         </ol>
                       </li>
                     </ol>
@@ -347,13 +352,11 @@
                         <strong>Passport Configuration</strong>
                         -
                         <ol class="ordered-list">
-                          <li>Open you command prompt</li>
+                          <li> First install the necessary dependencies, such as <b>passport, passport-local, and express-session</b></li>
                           <li>
-                            <code>yarn build</code> #or
-                            <code>npm run build </code> (will build locally and
-                            generate public directory)
+                            <code>Passport is a middleware that simplifies user authentication </code> 
                           </li>
-                          <li>Just upload build folder on your server</li>
+                          <li> Passport's middleware is integrated into the application with <code>passport.initialize()</code> and <code>passport.session()</code>, allowing for the seamless handling of login, logout, and session persistence.</li>
                         </ol>
                       </li>
                     </ol>
@@ -370,19 +373,36 @@
                     class="shortcode_title"
                     id="change_site_title_and_favicon"
                   >
-                    <h2 class="load-order-2">Change Site Title, Favicon and</h2>
+                    <h2 class="load-order-2">Components</h2>
                     <p>
-                      To change your Site title and Favicon open Paheli folder
-                      in your editor and go to the location by following
-                      screenshot which are given bellow.
+                      A model is created from a schema, which defines the structure and validation rules for documents in a collection, for example the 
+                      assignement model is created from the assignement schema with key fields such 
+                      as the assignment title, description, due date, assigned date, and the associated course.
                     </p>
                     <br />
                     <p>
-                      <b>main.jsx and index.html</b> is root file & every components/page will
-                      render in this file . And we can use <code>meta</code> ,
-                      <code>link</code> , <code>title</code> etc. in head tag
-                      for every pages .
+                      Controllers handle the business logic for processing requests and interacting with the models, in a schoolSignin controller,
+                       the controller would handle the logic for managing a school's sign-in process,<code> such as authenticating the user and initiating a session.</code>
                     </p>
+                    <br />
+                    <p>
+                      Middleware functions process incoming requests before they reach the route handlers.Used to manage cross-origin requests  and controls which external
+                       domains are allowed to access resources on the server by setting policies on allowed origins, methods, and headers.
+                    </p>
+
+                    <br />
+                    <p>
+                      Routes define the API endpoints that handle different client requests. Routes are linked to specific HTTP methods 
+                      <code>(like GET, POST, PUT, DELETE)</code> and direct these requests to controller functions. In a financeRoutes file, 
+                      you might have routes for viewing balances <code>(GET /balance)</code>, updating payments <code>(PUT /payment/:id)</code>, and deleting transactions <code>(DELETE /transaction/:id)</code>.
+                    </p>
+
+                    <br />
+                    <p>
+                      The server file configures the Express application, including middleware, routes, and port settings. It sets up the server to listen for incoming requests and respond to them appropriately.
+                      In the server.js file, you might configure middleware like <code>express.json()</code> to parse JSON request bodies and <code>express.urlencoded()</code> to parse URL-encoded request bodies.
+                    </p>
+
 
                     <figure>
                       <img
@@ -433,7 +453,7 @@
                   </div>
 
                   <div class="shortcode_title" id="change_logo">
-                    <h2 class="load-order-2">Updates</h2>
+                    <h2 class="load-order-2">Frontend Setup</h2>
                     <p>
                       To change logo and customize other header data do the
                       following:
