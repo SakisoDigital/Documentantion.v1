@@ -455,42 +455,29 @@
                   <div class="shortcode_title" id="change_logo">
                     <h2 class="load-order-2">Frontend Setup</h2>
                     <p>
-                      To change logo and customize other header data do the
-                      following:
+                    
+                      The authstore manages user authentication and 
+                      authorization by storing login states, tokens, and user roles, 
+                      enabling secure access control across an application.
+                      <br>
+                    </br>
+                      Now to open the authstore folder do the following:
                     </p>
                     <div class="steps-panel">
                       <ol class="ordered-list">
                         <li>
                           From the project folder go to
                           <span class="direction_steps">
-                            <span class="direction_step">public </span>
-                            <span class="direction_step">images</span>
+                            <span class="direction_step">Production</span>
+                            <span class="direction_step">auth</span>
                             <span class="direction_step">
-                              there we have all the images to use
+                              authstore.js
                             </span>
                           </span>
                         </li>
-                        <li>
-                          From the project folder go to
-                          <span class="direction_steps"
-                            ><span class="direction_step">src </span
-                            ><span class="direction_step">Components</span>
-                            <span class="direction_step">Header</span>
-                            <span class="direction_step">Header.jsx</span>
-                            <span class="direction_step"
-                              >Open the header where you want to use</span
-                            ></span
-                          >
-                        </li>
-                        <li>
-                          Then change the logo as well as you can also change
-                          other data
-                        </li>
-                        <li>In Footer we can change logo by the same way.</li>
-                      </ol>
+                       
                       <p>
-                        To change your logo following screenshot which are given
-                        bellow.
+                        To change your authstore.js apply different logic to the file :
                       </p>
                     </div>
                     <figure>
@@ -502,45 +489,26 @@
                                         from here."
                       />
                       <figcaption class="text-center">
-                        By folllowing this screenshot you can change your Logo
+                         authstore.js
                       </figcaption>
                     </figure>
                   </div>
 
                   <div class="shortcode_title" id="customize_menu">
-                    <h2 class="load-order-2">Customize Menu</h2>
-                    <p>To customize menu do the following:</p>
+                    <h2 class="load-order-2">URLS</h2>
+                    <p>URLs are used to interact with backend APIs for managing authentication.</p>
                     <div class="steps-panel">
                       <ol class="ordered-list">
                         <li>
                           From the project folder go to
                           <span class="direction_steps"
-                            ><span class="direction_step">src </span
-                            ><span class="direction_step">components</span>
-                            ><span class="direction_step">Header</span>
-                            <span class="direction_step">Header.jsx</span>
+                            ><span class="direction_step">Production </span
+                            ><span class="direction_step">Zustand</span>
+                            ><span class="direction_step">urls.js</span>
+              
                           </span>
                         </li>
-                        <li>
-                          Create new <b>menu</b> option in a <code>li</code> tag
-                          and always use <code>li</code> before end
-                          <code>ul</code> tag .
-                        </li>
-                        <li>
-                          And for routing next.js provide us
-                          <code>Link</code> tag, import it and use it like below
-                          screenshots
-                        </li>
-                        <li>
-                          Then in <code>Link ></code> <code>href =""</code> use
-                          page's folder name
-                        </li>
-                        <li>
-                          Then customize the menu data following the screenshot
-                        </li>
-                        <li>
-                          Use same way to change menu data for mobile devices
-                        </li>
+                  
                       </ol>
                     </div>
                     <figure>
@@ -558,35 +526,22 @@
 
                 <article class="documentation_body doc-section" id="page">
                   <div class="shortcode_title" id="customize_components">
-                    <h2 class="load-order-2">Customize Components</h2>
-                    <p>To create a new page do the following:</p>
+                    <h2 class="load-order-2">Frontend Components</h2>
+                    <p>Components are reusable, self-contained units that define a part 
+                      of the user  <code>interface (UI)</code> and the logic associated with it.<br>
+                      The <code>Login</code> Component handles user input (username and password) and sends a 
+                      request to the backend for authentication.</p>
                     <div class="steps-panel">
                       <ol class="ordered-list">
                         <li>
                           There is all components you have to import from
                           <span class="direction_steps">
-                            <span class="direction_step">src </span>
-                            <span class="direction_step">components</span>
+                            <span class="direction_step">Production </span>
+                            <span class="direction_step">auth</span>
+                            <span class="direction_step">authstore</span>
                           </span>
                         </li>
-                        <li>
-                          From the project folder go to
-                          <span class="direction_steps"
-                            ><span class="direction_step">src</span
-                            ><span class="direction_step"> app </span></span
-                          >
-                          folder and import component where you want to
-                          customize
-                        </li>
-
-                        <li>
-                          <b>page.js / page.jsx</b>
-                          is the main page there will stay all components .
-                        </li>
-                      </ol>
-                      <p>
-                        To solve it follow screenshots which are given below
-                      </p>
+                       
                     </div>
 
                     <figure>
@@ -596,14 +551,20 @@
                         alt="Customize components"
                       />
                       <figcaption class="text-center">
-                        Customize Components
+                        Login.jsx
                       </figcaption>
                     </figure>
                   </div>
 
                   <div class="shortcode_title" id="create_new_section">
-                    <h2 class="load-order-2">Create a new section</h2>
-                    <p>To create a new page do the following:</p>
+                    <h2 class="load-order-2">Creating Components</h2>
+                    <p>The Finance section of the application is organized into components that handle different 
+                      aspects of financial data management and display, built with a focus on modularity and reusability.<br></br>
+
+                      The <code> App.jsx</code> file acts as the main hub for the React application as it brings together all the different 
+                      components, manages navigation between pages, handles the overall layout, and can also manage global states like user information or settings.
+                      <br></br>
+                      To create a new page, follow these steps:</p>
                     <div class="steps-panel">
                       <ol class="ordered-list">
                         <li>
@@ -611,24 +572,13 @@
                           <span class="direction_steps"
                             ><span class="direction_step">src </span>
                             <span class="direction_step">Components</span>
+                            <span class="direction_step">Finance folder</span>
+                            <span class="direction_step">Reports.jsx</span>
                             <span class="direction_step"
-                              >Then create [your-section-name].js/jsx file</span
+                              >Then  you can add files here </span
                             ></span
                           >
-                        </li>
-                        <li>
-                          Inner the file create a function and write your code
-                        </li>
-                        <li>Then return your all data as a jsx code</li>
-                        <li>
-                          At last you have to export this function where you put
-                          your data
-                        </li>
-                        <li>
-                          then import that file to
-                          <span class="direction_step">app</span> folder and
-                          select folder where you want to put
-                        </li>
+                    
                       </ol>
                     </div>
                     <figure>
@@ -643,49 +593,38 @@
                         alt="Create a new page"
                       />
                       <figcaption class="text-center">
-                        Create a new section
+                        App.jsx
                       </figcaption>
                     </figure>
                   </div>
                   <div class="shortcode_title" id="create_new_page">
-                    <h2 class="load-order-2">Create a new page</h2>
-                    <p>To create a new page do the following:</p>
+                    <h2 class="load-order-2">Create BursorDashboard</h2>
+                    <p>To create the bursor dashboard do  the following:</p>
                     <div class="steps-panel">
                       <ol class="ordered-list">
                         <li>
                           From the project folder go to
                           <span class="direction_steps"
                             ><span class="direction_step">src </span>
-                            <span class="direction_step">app</span>
+                            <span class="direction_step">components</span>
                             <span class="direction_step"
-                              >Then create a folder & use your page name</span
+                              >bursoDash</span
                             >
                             <span class="direction_step"
-                              >Then create page.js/jsx file</span
+                              >Then create table.jsx file</span
                             ></span
                           >
                         </li>
                         <li>
                           Inner the file create a function and write your code
+                            to display a table component that displays data such as Date, Amount, and Status,
                         </li>
-                        <li>Then return your all data as a jsx code</li>
-                        <li>
-                          At last you have to export this function where you put
-                          your data
-                        </li>
+                        
+                        <li>Also create a wrapper file the BursorMainArea   used to wrap and organize elements
+                           within a section of your application</li>
+                          
 
-                        <li>
-                          Now you have to link in the menu or where you want to
-                          go to this page by clicking
-                        </li>
-                        <li>
-                          to routing your page use your pages folder name .
-                        </li>
-                      </ol>
-                      <p>
-                        To done this process follow the screenshots which are
-                        given bellow.
-                      </p>
+                           <li>Routing allows navigation between different pages  so firstly, you need to install <code>react-router-dom</code></li>
                     </div>
                     <figure>
                       <img
@@ -700,7 +639,7 @@
                       />
 
                       <figcaption class="text-center">
-                        Create a new page
+                        App.jsx
                       </figcaption>
                     </figure>
                   </div>
@@ -709,10 +648,11 @@
                 <article class="documentation_body doc-section" id="styles">
                   <div class="shortcode_title">
                     <h2 class="load-order-2" id="global_color_options_title">
-                      Change Styles
+                      Protecting Routes
                     </h2>
                     <p>
-                      To change Global style
+                      Use <code>react-router-dom</code> to handle route protection, ensuring that users 
+                      can only access certain routes if they meet specific conditions.
                       <span class="direction_steps"
                         ><span class="direction_step">src </span
                         ><span class="direction_step">styles </span
@@ -726,22 +666,18 @@
                         alt="Change Global Color Options
                                                 Setting"
                       />
-                      <figcaption class="text-center">
-                        Change Global Color Options Setting
-                      </figcaption>
-                    </figure>
+                      
                   </div>
                 </article>
                 <article class="documentation_body doc-section" id="change-log">
                   <div class="shortcode_title">
                     <h2 class="load-order-2" id="changelog_title">
-                      Change Log
+                      Release Notes
                     </h2>
                     <p>
-                      Our team never stops Improving, bug fixes, and
-                      improvements. See What's New. We recommend you to read the
-                      changelog for every update.
-                    </p>
+                      We’re dedicated to continuously improving the School Management System with new 
+                      features, bug fixes, and performance enhancements. Check out the latest updates and improvements 
+                      in each release. Be sure to review the release notes after every update to stay informed about what’s new.
                   </div>
                   <div class="changelog_inner">
                     <div class="row changelog_info" id="v100">
